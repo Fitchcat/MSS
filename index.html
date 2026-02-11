@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sport Session — Réservez votre prochain sport ou loisir</title>
+    <meta name="description" content="Découvrez et réservez autour de vous votre sport ou loisir préféré, à la carte et sans abonnement. Plus de 110 activités disponibles.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="logo-mysportsession.png" alt="My Sport Session">
+            </a>
+            <nav class="header__nav" id="mainNav">
+                <a href="#activites">Activités</a>
+                <a href="#comment-ca-marche">Comment ça marche</a>
+                <a href="#professionnels">Professionnels</a>
+                <a href="#temoignages">Témoignages</a>
+            </nav>
+            <div class="header__actions">
+                <a href="#" class="btn btn--ghost">Se connecter</a>
+                <a href="#professionnels" class="btn btn--secondary btn--sm">Espace Pro</a>
+                <button class="header__burger" id="burgerBtn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile nav -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#activites">Activités</a>
+            <a href="#comment-ca-marche">Comment ça marche</a>
+            <a href="#professionnels">Professionnels</a>
+            <a href="#temoignages">Témoignages</a>
+            <a href="#" class="btn btn--primary" style="color:#FFF;margin-top:1rem;text-align:center;">Se connecter</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__bg"></div>
+        <div class="container hero__content">
+            <h1 class="hero__title">Trouvez et réservez votre <span class="highlight">activité sportive</span> en quelques clics</h1>
+            <div class="hero__bg-blob"></div>
+            <p class="hero__subtitle">À la carte, sans abonnement, près de chez vous. Découvrez plus de 110 sports et loisirs disponibles à la séance.</p>
+
+            <!-- Search bar Doctolib-style -->
+            <div class="search-bar">
+                <div class="search-bar__field">
+                    <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    <div class="search-bar__typing-wrap">
+                        <input type="text" placeholder="" class="search-bar__input" id="searchActivity">
+                        <span class="search-bar__animated-ph" id="animatedPlaceholder"></span>
+                    </div>
+                </div>
+                <div class="search-bar__divider"></div>
+                <div class="search-bar__field">
+                    <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <input type="text" placeholder="Où ? (ville, code postal)" class="search-bar__input">
+                </div>
+                <button class="btn btn--primary btn--lg search-bar__btn">Rechercher</button>
+            </div>
+
+            <!-- Quick tags -->
+            <div class="hero__tags">
+                <span class="tag">Yoga</span>
+                <span class="tag">Fitness</span>
+                <span class="tag">Pilates</span>
+                <span class="tag">Tennis</span>
+                <span class="tag">Boxe</span>
+                <span class="tag">Padel</span>
+                <span class="tag">Natation</span>
+                <span class="tag">Golf</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats banner -->
+    <section class="stats">
+        <div class="container stats__grid">
+            <div class="stat">
+                <span class="stat__number" data-target="3436">0</span>
+                <span class="stat__label">activités disponibles chaque semaine</span>
+            </div>
+            <div class="stat">
+                <span class="stat__number" data-target="110">0</span>
+                <span class="stat__suffix">+</span>
+                <span class="stat__label">sports et loisirs référencés</span>
+            </div>
+            <div class="stat">
+                <span class="stat__number" data-target="10000">0</span>
+                <span class="stat__suffix">+</span>
+                <span class="stat__label">réservations mensuelles</span>
+            </div>
+            <div class="stat">
+                <span class="stat__number" data-target="99">0</span>
+                <span class="stat__suffix">%</span>
+                <span class="stat__label">taux de complétion des réservations</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment ça marche -->
+    <section class="how-it-works" id="comment-ca-marche">
+        <div class="container">
+            <h2 class="section-title">Comment ça <span class="gradient-text">marche</span> ?</h2>
+            <p class="section-subtitle">Réservez votre activité en 3 étapes simples</p>
+            <div class="steps">
+                <!-- 1. Choisissez — Loupe + grille d'activités -->
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#f7a10b"/>
+                                    <stop offset="100%" stop-color="#ed2c1a"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Cartes d'activités -->
+                            <rect x="6" y="14" width="22" height="22" rx="5" fill="#eeedf6"/>
+                            <rect x="6" y="42" width="22" height="22" rx="5" fill="#eeedf6"/>
+                            <rect x="34" y="14" width="22" height="22" rx="5" fill="#eeedf6"/>
+                            <rect x="34" y="42" width="22" height="22" rx="5" fill="url(#grad1)" opacity="0.2"/>
+                            <!-- Icônes dans les cartes -->
+                            <circle cx="17" cy="25" r="4" fill="#160d4f" opacity="0.3"/>
+                            <circle cx="45" cy="25" r="4" fill="#160d4f" opacity="0.3"/>
+                            <circle cx="17" cy="53" r="4" fill="#160d4f" opacity="0.3"/>
+                            <circle cx="45" cy="53" r="4" fill="url(#grad1)"/>
+                            <!-- Loupe -->
+                            <circle cx="58" cy="56" r="14" stroke="url(#grad1)" stroke-width="3" fill="white"/>
+                            <circle cx="58" cy="56" r="6" fill="url(#grad1)" opacity="0.15"/>
+                            <path d="M68 66l8 8" stroke="url(#grad1)" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="step__number">1</div>
+                    <h3 class="step__title">Choisissez</h3>
+                    <p class="step__desc">Parcourez notre large sélection de sports et loisirs disponibles autour de vous. Filtrez par activité, lieu ou budget.</p>
+                </div>
+                <div class="step__arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+                <!-- 2. Sélectionnez — Calendrier avec curseur/pointeur -->
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#f7a10b"/>
+                                    <stop offset="100%" stop-color="#ed2c1a"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Calendrier -->
+                            <rect x="8" y="16" width="50" height="50" rx="8" stroke="#160d4f" stroke-width="2.5" fill="white"/>
+                            <path d="M8 30h50" stroke="#160d4f" stroke-width="2" opacity="0.2"/>
+                            <rect x="20" y="22" width="2" height="10" rx="1" fill="#160d4f" transform="rotate(0 20 22)" opacity="0"/>
+                            <!-- Crochets calendrier -->
+                            <path d="M22 12v10" stroke="#160d4f" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M44 12v10" stroke="#160d4f" stroke-width="2.5" stroke-linecap="round"/>
+                            <!-- Jours grille -->
+                            <rect x="16" y="36" width="8" height="7" rx="2" fill="#eeedf6"/>
+                            <rect x="29" y="36" width="8" height="7" rx="2" fill="#eeedf6"/>
+                            <rect x="42" y="36" width="8" height="7" rx="2" fill="#eeedf6"/>
+                            <rect x="16" y="48" width="8" height="7" rx="2" fill="#eeedf6"/>
+                            <rect x="29" y="48" width="8" height="7" rx="2" fill="url(#grad2)"/>
+                            <rect x="42" y="48" width="8" height="7" rx="2" fill="#eeedf6"/>
+                            <!-- Curseur pointeur -->
+                            <path d="M54 46l12 10 -3 2 5 8-4 2-5-8-3 3z" fill="url(#grad2)"/>
+                        </svg>
+                    </div>
+                    <div class="step__number">2</div>
+                    <h3 class="step__title">Sélectionnez</h3>
+                    <p class="step__desc">Choisissez le créneau qui vous convient parmi les disponibilités en temps réel. Matin, midi ou soir, à vous de décider.</p>
+                </div>
+                <div class="step__arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+                <!-- 3. Réservez — Ticket/pass avec check -->
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#f7a10b"/>
+                                    <stop offset="100%" stop-color="#ed2c1a"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Ticket -->
+                            <path d="M10 20h60a4 4 0 014 4v8a6 6 0 000 12v12a4 4 0 01-4 4H10a4 4 0 01-4-4V44a6 6 0 000-12V24a4 4 0 014-4z" fill="white" stroke="#160d4f" stroke-width="2.5"/>
+                            <!-- Ligne pointillée -->
+                            <path d="M50 22v6M50 34v6M50 46v6M50 54v4" stroke="#160d4f" stroke-width="1.5" stroke-dasharray="0.5 4" stroke-linecap="round" opacity="0.25"/>
+                            <!-- Détails ticket -->
+                            <rect x="16" y="28" width="22" height="3" rx="1.5" fill="#160d4f" opacity="0.15"/>
+                            <rect x="16" y="35" width="16" height="3" rx="1.5" fill="#160d4f" opacity="0.1"/>
+                            <rect x="16" y="44" width="18" height="3" rx="1.5" fill="#160d4f" opacity="0.1"/>
+                            <!-- Badge check gradient -->
+                            <circle cx="58" cy="58" r="14" fill="url(#grad3)"/>
+                            <path d="M51 58l5 5 9-10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="step__number">3</div>
+                    <h3 class="step__title">Réservez</h3>
+                    <p class="step__desc">Confirmez votre réservation en un clic. Payez sur place ou en ligne, sans commission ni frais cachés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activités populaires -->
+    <section class="activities" id="activites">
+        <div class="container">
+            <h2 class="section-title">Explorez nos <span class="gradient-text">activités</span></h2>
+            <p class="section-subtitle">Plus de 110 sports et loisirs à découvrir près de chez vous</p>
+            <div class="activities__grid">
+                <a href="#" class="activity-card">
+                    <div class="activity-card__img" style="background-image: url('Photos/Yoga2.jpeg');"></div>
+                    <h3>Yoga</h3>
+                    <p>320+ séances / semaine</p>
+                </a>
+                <a href="#" class="activity-card">
+                    <div class="activity-card__img" style="background-image: url('Photos/FitnessStep.jpeg');"></div>
+                    <h3>Fitness</h3>
+                    <p>480+ séances / semaine</p>
+                </a>
+                <a href="#" class="activity-card">
+                    <div class="activity-card__img" style="background-image: url('Photos/pilatesReformer.jpg');"></div>
+                    <h3>Pilates</h3>
+                    <p>250+ séances / semaine</p>
+                </a>
+                <a href="#" class="activity-card">
+                    <div class="activity-card__img" style="background-image: url('Photos/Tennis.jpeg');"></div>
+                    <h3>Tennis</h3>
+                    <p>180+ créneaux / semaine</p>
+                </a>
+                <a href="#" class="activity-card">
+                    <div class="activity-card__img" style="background-image: url('Photos/Danse.jpeg');"></div>
+                    <h3>Danse</h3>
+                    <p>200+ cours / semaine</p>
+                </a>
+                <a href="#" class="activity-card">
+                    <div class="activity-card__img" style="background-image: url('Photos/kangoojump.jpeg');"></div>
+                    <h3>Kangoo jump</h3>
+                    <p>150+ séances / semaine</p>
+                </a>
+                <a href="#" class="activity-card">
+                    <div class="activity-card__img" style="background-image: url('Photos/Padel.jpg');"></div>
+                    <h3>Padel</h3>
+                    <p>120+ créneaux / semaine</p>
+                </a>
+                <a href="#" class="activity-card">
+                    <div class="activity-card__img" style="background-image: url('Photos/Natation.jpeg');"></div>
+                    <h3>Natation</h3>
+                    <p>90+ créneaux / semaine</p>
+                </a>
+            </div>
+            <div class="activities__cta">
+                <a href="#" class="btn btn--outline-gradient btn--lg">Voir toutes les activités</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Pourquoi <span class="gradient-text">My Sport Session</span> ?</h2>
+            <p class="section-subtitle">Le Doctolib des activités sportives et de loisirs</p>
+            <div class="benefits__grid">
+                <!-- 100% Gratuit — Tag prix barré -->
+                <div class="benefit">
+                    <div class="benefit__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="8" width="26" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="7" cy="16" r="1.5" fill="currentColor" opacity="0.3"/>
+                            <circle cx="25" cy="16" r="1.5" fill="currentColor" opacity="0.3"/>
+                            <path d="M6 6l20 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>100% Gratuit</h3>
+                    <p>Aucune commission, aucun frais caché. Réservez gratuitement, payez directement au club.</p>
+                </div>
+                <!-- Sans abonnement — Chaîne brisée / liberté -->
+                <div class="benefit">
+                    <div class="benefit__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 18H7a5 5 0 010-10h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M22 18h3a5 5 0 000-10h-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M12 13h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 3"/>
+                            <path d="M9 22l3-3M23 22l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M12 25l1.5-2M20 25l-1.5-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <h3>Sans abonnement</h3>
+                    <p>Réservez à la séance, quand vous voulez. Aucun engagement, aucune contrainte.</p>
+                </div>
+                <!-- Près de chez vous — Pin de localisation -->
+                <div class="benefit">
+                    <div class="benefit__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 3C10.477 3 6 7.477 6 13c0 7 10 17 10 17s10-10 10-17c0-5.523-4.477-10-10-10z" stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="16" cy="13" r="4" stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="16" cy="13" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Près de chez vous</h3>
+                    <p>Trouvez des activités autour de vous grâce à notre géolocalisation intelligente.</p>
+                </div>
+                <!-- Disponibilité en temps réel — Horloge avec éclair -->
+                <div class="benefit">
+                    <div class="benefit__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M16 7v9l5 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25 5l-2 5h4l-2 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Disponibilité en temps réel</h3>
+                    <p>Consultez les créneaux disponibles et réservez 24h/24, 7j/7 en quelques secondes.</p>
+                </div>
+                <!-- Tous niveaux — Barres de progression -->
+                <div class="benefit">
+                    <div class="benefit__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="22" width="6" height="8" rx="1.5" fill="currentColor" opacity="0.25"/>
+                            <rect x="13" y="15" width="6" height="15" rx="1.5" fill="currentColor" opacity="0.5"/>
+                            <rect x="22" y="6" width="6" height="24" rx="1.5" fill="currentColor" opacity="0.85"/>
+                            <path d="M5 18l8-8 5 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="26" cy="5" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Tous niveaux</h3>
+                    <p>Débutant ou confirmé, trouvez des activités adaptées à votre niveau et à votre rythme.</p>
+                </div>
+                <!-- Annulation facile — Calendrier avec X -->
+                <div class="benefit">
+                    <div class="benefit__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="6" width="24" height="22" rx="3" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M4 12h24" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 3v5M22 3v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <circle cx="16" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M13.5 17.5l5 5M18.5 17.5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Annulation facile</h3>
+                    <p>Changement de programme ? Annulez simplement votre réservation en quelques clics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Pro -->
+    <section class="pro" id="professionnels">
+        <div class="container pro__inner">
+            <div class="pro__content">
+                <span class="pro__badge">Espace Professionnel</span>
+                <h2 class="pro__title">Vous êtes un <span class="gradient-text">club de sport</span> ou de loisirs ?</h2>
+                <p class="pro__desc">Optimisez la gestion de vos réservations, augmentez votre visibilité et développez votre clientèle grâce à notre plateforme dédiée aux professionnels.</p>
+                <ul class="pro__features">
+                    <li>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        Réservation autonome 24h/24 pour vos clients
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        Plus de 90 paramètres de personnalisation
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        Calendrier connecté et synchronisé en temps réel
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        Gestion des abonnements et des adhérents
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        Rappels automatiques par email et SMS
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        Sans commission sur vos paiements
+                    </li>
+                </ul>
+                <div class="pro__actions">
+                    <a href="https://info.mysportsession.com/club-de-sport-loisirs" class="btn btn--white btn--lg">Découvrir l'offre Pro</a>
+                    <a href="#" class="btn btn--ghost-white">Demander une démo</a>
+                </div>
+            </div>
+            <div class="pro__visual">
+                <div class="pro__mockup-wrap">
+                    <div class="pro__mockup">
+                        <div class="mockup-header">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-sidebar">
+                                <div class="mockup-menu-item active"></div>
+                                <div class="mockup-menu-item"></div>
+                                <div class="mockup-menu-item"></div>
+                                <div class="mockup-menu-item"></div>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="mockup-calendar">
+                                    <div class="mockup-cal-header"></div>
+                                    <div class="mockup-cal-grid">
+                                        <div class="mockup-cal-slot"></div>
+                                        <div class="mockup-cal-slot booked"></div>
+                                        <div class="mockup-cal-slot"></div>
+                                        <div class="mockup-cal-slot booked"></div>
+                                        <div class="mockup-cal-slot"></div>
+                                        <div class="mockup-cal-slot booked"></div>
+                                        <div class="mockup-cal-slot"></div>
+                                        <div class="mockup-cal-slot"></div>
+                                        <div class="mockup-cal-slot booked"></div>
+                                        <div class="mockup-cal-slot"></div>
+                                        <div class="mockup-cal-slot booked"></div>
+                                        <div class="mockup-cal-slot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Animated notification list -->
+                    <div class="notif-list" id="notifList"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="testimonials" id="temoignages">
+        <div class="container">
+            <h2 class="section-title">Ils nous font <span class="gradient-text">confiance</span></h2>
+            <p class="section-subtitle">Découvrez les retours de nos utilisateurs et partenaires</p>
+        </div>
+        <div class="testimonials__marquee">
+            <div class="testimonials__track">
+                <!-- Original 6 cards -->
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"C'est pratique, efficace avec des équipes réactives qui améliorent continuellement les fonctionnalités. My Sport Session est devenu un outil indispensable pour notre office de tourisme."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">JM</div><div><strong>Jean-Marc D.</strong><span>Directeur d'Office de Tourisme</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"Il y a eu un vrai avant et après My Sport Session. L'outil a éliminé le chaos des réservations téléphoniques et nous a apporté un soulagement essentiel dans la gestion du planning."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">PL</div><div><strong>Pierre L.</strong><span>Gérant de Golf</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"J'ai gagné un temps précieux dans la gestion de mes cours. Mes craintes de perdre le contrôle se sont vite dissipées. Je peux enfin me concentrer sur l'enseignement."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">SC</div><div><strong>Sophie C.</strong><span>Professeure de Pilates</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"Grâce à My Sport Session, j'ai découvert le padel à côté de chez moi. Réserver est ultra simple, pas d'abonnement, je choisis quand je veux jouer. C'est exactement ce qu'il me fallait."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">LB</div><div><strong>Lucas B.</strong><span>Joueur de Padel</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"En tant que coach, le nombre de mes réservations a augmenté de 40% depuis que je suis sur la plateforme. Le système de rappels automatiques réduit considérablement les no-shows."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">MR</div><div><strong>Marie R.</strong><span>Coach de CrossFit</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"Je fais du yoga le mardi et de la boxe le vendredi, le tout sans aucun abonnement. La flexibilité de My Sport Session correspond parfaitement à mon mode de vie. Je recommande à 100%."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">AT</div><div><strong>Amina T.</strong><span>Utilisatrice multi-sport</span></div></div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"C'est pratique, efficace avec des équipes réactives qui améliorent continuellement les fonctionnalités. My Sport Session est devenu un outil indispensable pour notre office de tourisme."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">JM</div><div><strong>Jean-Marc D.</strong><span>Directeur d'Office de Tourisme</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"Il y a eu un vrai avant et après My Sport Session. L'outil a éliminé le chaos des réservations téléphoniques et nous a apporté un soulagement essentiel dans la gestion du planning."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">PL</div><div><strong>Pierre L.</strong><span>Gérant de Golf</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"J'ai gagné un temps précieux dans la gestion de mes cours. Mes craintes de perdre le contrôle se sont vite dissipées. Je peux enfin me concentrer sur l'enseignement."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">SC</div><div><strong>Sophie C.</strong><span>Professeure de Pilates</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"Grâce à My Sport Session, j'ai découvert le padel à côté de chez moi. Réserver est ultra simple, pas d'abonnement, je choisis quand je veux jouer. C'est exactement ce qu'il me fallait."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">LB</div><div><strong>Lucas B.</strong><span>Joueur de Padel</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"En tant que coach, le nombre de mes réservations a augmenté de 40% depuis que je suis sur la plateforme. Le système de rappels automatiques réduit considérablement les no-shows."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">MR</div><div><strong>Marie R.</strong><span>Coach de CrossFit</span></div></div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
+                    <blockquote class="testimonial__quote">"Je fais du yoga le mardi et de la boxe le vendredi, le tout sans aucun abonnement. La flexibilité de My Sport Session correspond parfaitement à mon mode de vie. Je recommande à 100%."</blockquote>
+                    <div class="testimonial__author"><div class="testimonial__avatar">AT</div><div><strong>Amina T.</strong><span>Utilisatrice multi-sport</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container cta-final__inner">
+            <h2>Prêt à <span class="gradient-text">bouger</span> ?</h2>
+            <p>Rejoignez des milliers d'utilisateurs qui ont déjà trouvé leur activité idéale sur My Sport Session.</p>
+            <div class="cta-final__buttons">
+                <a href="#" class="btn btn--white btn--lg">Trouver une activité</a>
+                <a href="#professionnels" class="btn btn--ghost-white btn--lg">Je suis professionnel</a>
+            </div>
+            <div class="cta-final__price">À partir de <strong>1 &euro;</strong> la séance &middot; Sans abonnement &middot; Sans commission</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="Photos/LogoBlanc.png" alt="My Sport Session">
+                    </a>
+                    <p>La plateforme de réservation de sport et loisirs, à la carte et sans abonnement. Made in France.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2V9zm2-6a2 2 0 110 4 2 2 0 010-4z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Activités populaires</h4>
+                    <ul>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Fitness</a></li>
+                        <li><a href="#">Pilates</a></li>
+                        <li><a href="#">Tennis</a></li>
+                        <li><a href="#">Boxe</a></li>
+                        <li><a href="#">Padel</a></li>
+                        <li><a href="#">CrossFit</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Presse</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Gestion des cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 My Sport Session. Tous droits réservés. Made with ❤️ in Montpellier</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

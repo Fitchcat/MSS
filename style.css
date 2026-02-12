@@ -225,7 +225,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .header__nav a {
-    font-size: 0.94rem;
+    font-size: 1 rem;
     font-weight: 500;
     color: var(--text-light);
     position: relative;
@@ -342,7 +342,7 @@ img { max-width: 100%; height: auto; }
     --aurora-1: #f27611;
     --aurora-2: #ed2d1c;
     --aurora-3: #e20606;
-    --aurora-4: #f27611;
+    --aurora-4: #fd7906;
     display: inline-block;
     position: relative;
     background-image: linear-gradient(135deg, var(--aurora-1), var(--aurora-2), var(--aurora-3), var(--aurora-4), var(--aurora-1));

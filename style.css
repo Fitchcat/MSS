@@ -1629,6 +1629,13 @@ img {
         font-size: 2.5rem;
     }
 
+    .header__logo img {
+        height: auto;
+        max-height: 60px;
+        /* Prevent distortion and scale down */
+        object-fit: contain;
+    }
+
     .section-title {
         font-size: 1.875rem;
     }
@@ -1636,6 +1643,8 @@ img {
     .stats__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
+        align-items: baseline;
+        /* Align numbers on baseline */
     }
 
     .activities__grid {

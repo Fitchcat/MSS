@@ -783,9 +783,36 @@ img {
 }
 
 .activities__grid {
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+    /* Gradient mask for smooth fade in/out */
+    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.activities__track {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    animation: scrollVertical 30s linear infinite;
+    padding-bottom: 20px;
+    /* seamless loop gap */
+}
+
+/* Pause on hover */
+.activities__track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollVertical {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
 }
 
 .activity-card {
@@ -1598,7 +1625,7 @@ img {
         gap: 32px;
     }
 
-    .activities__grid {
+    .activities__track {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1677,7 +1704,7 @@ img {
         padding-top: 0;
     }
 
-    .activities__grid {
+    .activities__track {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1723,6 +1750,11 @@ img {
     }
 
     .activities__grid {
+        height: 600px;
+        /* Taller for mobile */
+    }
+
+    .activities__track {
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }

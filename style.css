@@ -548,6 +548,8 @@ img {
     overflow-x: auto;
     justify-content: flex-start;
     gap: 12px;
+    padding-top: 4px;
+    /* Prevent hover clipping */
     padding-bottom: 8px;
     /* Space for scrollbar if visible */
     -webkit-overflow-scrolling: touch;

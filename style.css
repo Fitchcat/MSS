@@ -783,37 +783,40 @@ img {
 }
 
 .activities__grid {
-    position: relative;
-    height: 520px;
-    overflow: hidden;
-    /* Gradient mask for smooth fade in/out */
-    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
-}
-
-.activities__track {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    animation: scrollVertical 30s linear infinite;
-    padding-bottom: 20px;
-    /* seamless loop gap */
+    /* Height calculation: (Card Height ~260px * 2) + Gap 20px = ~540px */
+    max-height: 560px;
+    overflow-y: auto;
+    padding-right: 8px;
+    /* Avoid scrollbar overlap */
+
+    /* Smooth Scroll */
+    scroll-behavior: smooth;
+
+    /* Custom Scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) transparent;
 }
 
-/* Pause on hover */
-.activities__track:hover {
-    animation-play-state: paused;
+/* Webkit Scrollbar Styling */
+.activities__grid::-webkit-scrollbar {
+    width: 6px;
 }
 
-@keyframes scrollVertical {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-50%);
-    }
+.activities__grid::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
 }
+
+.activities__grid::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 4px;
+}
+
+/* Remove ticker keyframes and track */
+
 
 .activity-card {
     display: block;
@@ -1750,11 +1753,8 @@ img {
     }
 
     .activities__grid {
-        height: 600px;
-        /* Taller for mobile */
-    }
-
-    .activities__track {
+        /* Mobile height: (Card ~170px * 4) + Gaps = ~700px */
+        max-height: 720px;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }

@@ -156,11 +156,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Tags click ---
-    document.querySelectorAll('.tag').forEach(tag => {
+    document.querySelectorAll('.icon-tag').forEach(tag => {
         tag.addEventListener('click', () => {
+            const label = tag.querySelector('.icon-tag__label');
             const searchInput = document.getElementById('searchActivity');
-            if (searchInput) {
-                searchInput.value = tag.textContent;
+            if (searchInput && label) {
+                searchInput.value = label.textContent;
                 searchInput.focus();
             }
         });

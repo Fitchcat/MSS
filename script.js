@@ -1,5 +1,5 @@
 /* ========================================
-   My Sport Session — Landing Page Scripts
+   My Sport Session — Landing Page Scripts (Updated)
    ======================================== */
 
 document.addEventListener('DOMContentLoaded', () => {

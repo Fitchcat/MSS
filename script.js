@@ -323,4 +323,46 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- FAQ Accordion ---
+    const faqItems = document.querySelectorAll('.faq__item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq__question');
+        const answer = item.querySelector('.faq__answer');
+
+        if (question && answer) {
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+
+                // Close all exclusively
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('open');
+                    const otherAnswer = otherItem.querySelector('.faq__answer');
+                    if (otherAnswer) otherAnswer.style.maxHeight = null;
+                });
+
+                // Toggle current if it wasn't open
+                if (!isOpen) {
+                    item.classList.add('open');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        }
+    });
+
+    // --- Tags Carousel Navigation ---
+    const tagsContainer = document.querySelector('.hero__tags');
+    const prevBtn = document.querySelector('.tags-nav--prev');
+    const nextBtn = document.querySelector('.tags-nav--next');
+
+    if (tagsContainer && prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            tagsContainer.scrollBy({ left: -200, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            tagsContainer.scrollBy({ left: 200, behavior: 'smooth' });
+        });
+    }
 });

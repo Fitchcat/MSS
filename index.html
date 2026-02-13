@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Sport Session — Réservez votre prochain sport ou loisir</title>
-    <meta name="description" content="Découvrez et réservez autour de vous votre sport ou loisir préféré, à la carte et sans abonnement. Plus de 110 activités disponibles.">
+    <meta name="description"
+        content="Découvrez et réservez autour de vous votre sport ou loisir préféré, à la carte et sans abonnement. Plus de 110 activités disponibles.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -25,7 +28,7 @@
                 <a href="#temoignages">Témoignages</a>
             </nav>
             <div class="header__actions">
-                <a href="#" class="btn btn--ghost">Se connecter</a>
+                <a href="#" class="btn btn--ghost btn--sm">Se connecter</a>
                 <a href="#professionnels" class="btn btn--secondary btn--sm">Vous êtes un Pro</a>
                 <button class="header__burger" id="burgerBtn" aria-label="Menu">
                     <span></span><span></span><span></span>
@@ -46,14 +49,20 @@
     <section class="hero">
         <div class="hero__bg"></div>
         <div class="container hero__content">
-            <h1 class="hero__title">Trouvez et réservez votre <span class="highlight">activité sportive</span> en quelques clics</h1>
+            <h1 class="hero__title">Trouvez et réservez votre <span class="highlight">activité sportive</span> en
+                quelques clics</h1>
             <div class="hero__bg-blob"></div>
-            <p class="hero__subtitle">À la carte, sans abonnement, près de chez vous. Découvrez plus de 110 sports et loisirs disponibles à la séance.</p>
+            <p class="hero__subtitle">À la carte, sans abonnement, près de chez vous. Découvrez plus de 110 sports et
+                loisirs disponibles à la séance.</p>
 
             <!-- Search bar Doctolib-style -->
             <div class="search-bar">
                 <div class="search-bar__field">
-                    <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.35-4.35" />
+                    </svg>
                     <div class="search-bar__typing-wrap">
                         <input type="text" placeholder="" class="search-bar__input" id="searchActivity">
                         <span class="search-bar__animated-ph" id="animatedPlaceholder"></span>
@@ -61,22 +70,44 @@
                 </div>
                 <div class="search-bar__divider"></div>
                 <div class="search-bar__field">
-                    <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
                     <input type="text" placeholder="Où ? (ville, code postal)" class="search-bar__input">
                 </div>
                 <button class="btn btn--primary btn--lg search-bar__btn">Rechercher</button>
             </div>
 
             <!-- Quick tags -->
-            <div class="hero__tags">
-                <span class="tag">Yoga</span>
-                <span class="tag">Fitness</span>
-                <span class="tag">Pilates</span>
-                <span class="tag">Tennis</span>
-                <span class="tag">Boxe</span>
-                <span class="tag">Padel</span>
-                <span class="tag">Natation</span>
-                <span class="tag">Golf</span>
+            <div class="hero__tags-wrapper">
+                <button class="tags-nav tags-nav--prev" aria-label="Défiler à gauche">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <div class="hero__tags">
+                    <span class="tag">Yoga</span>
+                    <span class="tag">Fitness</span>
+                    <span class="tag">Pilates</span>
+                    <span class="tag">Tennis</span>
+                    <span class="tag">Boxe</span>
+                    <span class="tag">Padel</span>
+                    <span class="tag">Natation</span>
+                    <span class="tag">Golf</span>
+                    <span class="tag">Badminton</span>
+                    <span class="tag">Escalade</span>
+                    <span class="tag">Danse</span>
+                    <span class="tag">Basket</span>
+                    <span class="tag">Foot</span>
+                    <span class="tag">Rugby</span>
+                </div>
+                <button class="tags-nav tags-nav--next" aria-label="Défiler à droite">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -118,24 +149,24 @@
                         <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#f7a10b"/>
-                                    <stop offset="100%" stop-color="#ed2c1a"/>
+                                    <stop offset="0%" stop-color="#f7a10b" />
+                                    <stop offset="100%" stop-color="#ed2c1a" />
                                 </linearGradient>
                             </defs>
                             <!-- Cartes d'activités -->
-                            <rect x="6" y="14" width="22" height="22" rx="5" fill="#eeedf6"/>
-                            <rect x="6" y="42" width="22" height="22" rx="5" fill="#eeedf6"/>
-                            <rect x="34" y="14" width="22" height="22" rx="5" fill="#eeedf6"/>
-                            <rect x="34" y="42" width="22" height="22" rx="5" fill="url(#grad1)" opacity="0.2"/>
+                            <rect x="6" y="14" width="22" height="22" rx="5" fill="#eeedf6" />
+                            <rect x="6" y="42" width="22" height="22" rx="5" fill="#eeedf6" />
+                            <rect x="34" y="14" width="22" height="22" rx="5" fill="#eeedf6" />
+                            <rect x="34" y="42" width="22" height="22" rx="5" fill="url(#grad1)" opacity="0.2" />
                             <!-- Icônes dans les cartes -->
-                            <circle cx="17" cy="25" r="4" fill="#160d4f" opacity="0.3"/>
-                            <circle cx="45" cy="25" r="4" fill="#160d4f" opacity="0.3"/>
-                            <circle cx="17" cy="53" r="4" fill="#160d4f" opacity="0.3"/>
-                            <circle cx="45" cy="53" r="4" fill="url(#grad1)"/>
+                            <circle cx="17" cy="25" r="4" fill="#160d4f" opacity="0.3" />
+                            <circle cx="45" cy="25" r="4" fill="#160d4f" opacity="0.3" />
+                            <circle cx="17" cy="53" r="4" fill="#160d4f" opacity="0.3" />
+                            <circle cx="45" cy="53" r="4" fill="url(#grad1)" />
                             <!-- Loupe -->
-                            <circle cx="58" cy="56" r="14" stroke="url(#grad1)" stroke-width="3" fill="white"/>
-                            <circle cx="58" cy="56" r="6" fill="url(#grad1)" opacity="0.15"/>
-                            <path d="M68 66l8 8" stroke="url(#grad1)" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="58" cy="56" r="14" stroke="url(#grad1)" stroke-width="3" fill="white" />
+                            <circle cx="58" cy="56" r="6" fill="url(#grad1)" opacity="0.15" />
+                            <path d="M68 66l8 8" stroke="url(#grad1)" stroke-width="3" stroke-linecap="round" />
                         </svg>
                     </div>
                     <div class="step__number">1</div>
@@ -144,7 +175,9 @@
                     <p class="step__desc">Parmi une large sélection de sports ou loisirs disponibles à la carte</p>
                 </div>
                 <div class="step__arrow">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
                 </div>
                 <!-- 2. Sélectionnez — Calendrier avec curseur/pointeur -->
                 <div class="step">
@@ -152,35 +185,40 @@
                         <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#f7a10b"/>
-                                    <stop offset="100%" stop-color="#ed2c1a"/>
+                                    <stop offset="0%" stop-color="#f7a10b" />
+                                    <stop offset="100%" stop-color="#ed2c1a" />
                                 </linearGradient>
                             </defs>
                             <!-- Calendrier -->
-                            <rect x="8" y="16" width="50" height="50" rx="8" stroke="#160d4f" stroke-width="2.5" fill="white"/>
-                            <path d="M8 30h50" stroke="#160d4f" stroke-width="2" opacity="0.2"/>
-                            <rect x="20" y="22" width="2" height="10" rx="1" fill="#160d4f" transform="rotate(0 20 22)" opacity="0"/>
+                            <rect x="8" y="16" width="50" height="50" rx="8" stroke="#160d4f" stroke-width="2.5"
+                                fill="white" />
+                            <path d="M8 30h50" stroke="#160d4f" stroke-width="2" opacity="0.2" />
+                            <rect x="20" y="22" width="2" height="10" rx="1" fill="#160d4f" transform="rotate(0 20 22)"
+                                opacity="0" />
                             <!-- Crochets calendrier -->
-                            <path d="M22 12v10" stroke="#160d4f" stroke-width="2.5" stroke-linecap="round"/>
-                            <path d="M44 12v10" stroke="#160d4f" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M22 12v10" stroke="#160d4f" stroke-width="2.5" stroke-linecap="round" />
+                            <path d="M44 12v10" stroke="#160d4f" stroke-width="2.5" stroke-linecap="round" />
                             <!-- Jours grille -->
-                            <rect x="16" y="36" width="8" height="7" rx="2" fill="#eeedf6"/>
-                            <rect x="29" y="36" width="8" height="7" rx="2" fill="#eeedf6"/>
-                            <rect x="42" y="36" width="8" height="7" rx="2" fill="#eeedf6"/>
-                            <rect x="16" y="48" width="8" height="7" rx="2" fill="#eeedf6"/>
-                            <rect x="29" y="48" width="8" height="7" rx="2" fill="url(#grad2)"/>
-                            <rect x="42" y="48" width="8" height="7" rx="2" fill="#eeedf6"/>
+                            <rect x="16" y="36" width="8" height="7" rx="2" fill="#eeedf6" />
+                            <rect x="29" y="36" width="8" height="7" rx="2" fill="#eeedf6" />
+                            <rect x="42" y="36" width="8" height="7" rx="2" fill="#eeedf6" />
+                            <rect x="16" y="48" width="8" height="7" rx="2" fill="#eeedf6" />
+                            <rect x="29" y="48" width="8" height="7" rx="2" fill="url(#grad2)" />
+                            <rect x="42" y="48" width="8" height="7" rx="2" fill="#eeedf6" />
                             <!-- Curseur pointeur -->
-                            <path d="M54 46l12 10 -3 2 5 8-4 2-5-8-3 3z" fill="url(#grad2)"/>
+                            <path d="M54 46l12 10 -3 2 5 8-4 2-5-8-3 3z" fill="url(#grad2)" />
                         </svg>
                     </div>
                     <div class="step__number">2</div>
                     <h3 class="step__title">Sélectionnez</h3>
                     <h4 class="step__subtitle">votre horaire</h4>
-                    <p class="step__desc">En fonction de votre disponibilité, de votre localisation ou encore de votre budget… C'est à vous de choisir !</p>
+                    <p class="step__desc">En fonction de votre disponibilité, de votre localisation ou encore de votre
+                        budget… C'est à vous de choisir !</p>
                 </div>
                 <div class="step__arrow">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
                 </div>
                 <!-- 3. Réservez — Ticket/pass avec check -->
                 <div class="step">
@@ -188,27 +226,32 @@
                         <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#f7a10b"/>
-                                    <stop offset="100%" stop-color="#ed2c1a"/>
+                                    <stop offset="0%" stop-color="#f7a10b" />
+                                    <stop offset="100%" stop-color="#ed2c1a" />
                                 </linearGradient>
                             </defs>
                             <!-- Ticket -->
-                            <path d="M10 20h60a4 4 0 014 4v8a6 6 0 000 12v12a4 4 0 01-4 4H10a4 4 0 01-4-4V44a6 6 0 000-12V24a4 4 0 014-4z" fill="white" stroke="#160d4f" stroke-width="2.5"/>
+                            <path
+                                d="M10 20h60a4 4 0 014 4v8a6 6 0 000 12v12a4 4 0 01-4 4H10a4 4 0 01-4-4V44a6 6 0 000-12V24a4 4 0 014-4z"
+                                fill="white" stroke="#160d4f" stroke-width="2.5" />
                             <!-- Ligne pointillée -->
-                            <path d="M50 22v6M50 34v6M50 46v6M50 54v4" stroke="#160d4f" stroke-width="1.5" stroke-dasharray="0.5 4" stroke-linecap="round" opacity="0.25"/>
+                            <path d="M50 22v6M50 34v6M50 46v6M50 54v4" stroke="#160d4f" stroke-width="1.5"
+                                stroke-dasharray="0.5 4" stroke-linecap="round" opacity="0.25" />
                             <!-- Détails ticket -->
-                            <rect x="16" y="28" width="22" height="3" rx="1.5" fill="#160d4f" opacity="0.15"/>
-                            <rect x="16" y="35" width="16" height="3" rx="1.5" fill="#160d4f" opacity="0.1"/>
-                            <rect x="16" y="44" width="18" height="3" rx="1.5" fill="#160d4f" opacity="0.1"/>
+                            <rect x="16" y="28" width="22" height="3" rx="1.5" fill="#160d4f" opacity="0.15" />
+                            <rect x="16" y="35" width="16" height="3" rx="1.5" fill="#160d4f" opacity="0.1" />
+                            <rect x="16" y="44" width="18" height="3" rx="1.5" fill="#160d4f" opacity="0.1" />
                             <!-- Badge check gradient -->
-                            <circle cx="58" cy="58" r="14" fill="url(#grad3)"/>
-                            <path d="M51 58l5 5 9-10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="58" cy="58" r="14" fill="url(#grad3)" />
+                            <path d="M51 58l5 5 9-10" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </div>
                     <div class="step__number">3</div>
                     <h3 class="step__title">Réservez</h3>
                     <h4 class="step__subtitle">en un clic</h4>
-                    <p class="step__desc">Facilement et rapidement, payez sur place sans commission ou annuler simplement !</p>
+                    <p class="step__desc">Facilement et rapidement, payez sur place sans commission ou annuler
+                        simplement !</p>
                 </div>
             </div>
         </div>
@@ -277,11 +320,11 @@
                 <div class="benefit">
                     <div class="benefit__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="8" width="26" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/>
-                            <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5"/>
-                            <circle cx="7" cy="16" r="1.5" fill="currentColor" opacity="0.3"/>
-                            <circle cx="25" cy="16" r="1.5" fill="currentColor" opacity="0.3"/>
-                            <path d="M6 6l20 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <rect x="3" y="8" width="26" height="16" rx="3" stroke="currentColor" stroke-width="1.8" />
+                            <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5" />
+                            <circle cx="7" cy="16" r="1.5" fill="currentColor" opacity="0.3" />
+                            <circle cx="25" cy="16" r="1.5" fill="currentColor" opacity="0.3" />
+                            <path d="M6 6l20 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
                         </svg>
                     </div>
                     <h3>100% Gratuit</h3>
@@ -291,11 +334,16 @@
                 <div class="benefit">
                     <div class="benefit__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 18H7a5 5 0 010-10h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                            <path d="M22 18h3a5 5 0 000-10h-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                            <path d="M12 13h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 3"/>
-                            <path d="M9 22l3-3M23 22l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M12 25l1.5-2M20 25l-1.5-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                            <path d="M10 18H7a5 5 0 010-10h3" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" />
+                            <path d="M22 18h3a5 5 0 000-10h-3" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" />
+                            <path d="M12 13h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-dasharray="2 3" />
+                            <path d="M9 22l3-3M23 22l-3-3" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path d="M12 25l1.5-2M20 25l-1.5-2" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" opacity="0.5" />
                         </svg>
                     </div>
                     <h3>Sans abonnement</h3>
@@ -305,9 +353,10 @@
                 <div class="benefit">
                     <div class="benefit__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 3C10.477 3 6 7.477 6 13c0 7 10 17 10 17s10-10 10-17c0-5.523-4.477-10-10-10z" stroke="currentColor" stroke-width="1.8"/>
-                            <circle cx="16" cy="13" r="4" stroke="currentColor" stroke-width="1.8"/>
-                            <circle cx="16" cy="13" r="1.5" fill="currentColor"/>
+                            <path d="M16 3C10.477 3 6 7.477 6 13c0 7 10 17 10 17s10-10 10-17c0-5.523-4.477-10-10-10z"
+                                stroke="currentColor" stroke-width="1.8" />
+                            <circle cx="16" cy="13" r="4" stroke="currentColor" stroke-width="1.8" />
+                            <circle cx="16" cy="13" r="1.5" fill="currentColor" />
                         </svg>
                     </div>
                     <h3>Près de chez vous</h3>
@@ -317,9 +366,11 @@
                 <div class="benefit">
                     <div class="benefit__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.8"/>
-                            <path d="M16 7v9l5 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M25 5l-2 5h4l-2 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.8" />
+                            <path d="M16 7v9l5 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M25 5l-2 5h4l-2 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h3>Disponibilité en temps réel</h3>
@@ -329,11 +380,12 @@
                 <div class="benefit">
                     <div class="benefit__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="4" y="22" width="6" height="8" rx="1.5" fill="currentColor" opacity="0.25"/>
-                            <rect x="13" y="15" width="6" height="15" rx="1.5" fill="currentColor" opacity="0.5"/>
-                            <rect x="22" y="6" width="6" height="24" rx="1.5" fill="currentColor" opacity="0.85"/>
-                            <path d="M5 18l8-8 5 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="26" cy="5" r="2" fill="currentColor"/>
+                            <rect x="4" y="22" width="6" height="8" rx="1.5" fill="currentColor" opacity="0.25" />
+                            <rect x="13" y="15" width="6" height="15" rx="1.5" fill="currentColor" opacity="0.5" />
+                            <rect x="22" y="6" width="6" height="24" rx="1.5" fill="currentColor" opacity="0.85" />
+                            <path d="M5 18l8-8 5 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="26" cy="5" r="2" fill="currentColor" />
                         </svg>
                     </div>
                     <h3>Tous niveaux</h3>
@@ -343,11 +395,12 @@
                 <div class="benefit">
                     <div class="benefit__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="4" y="6" width="24" height="22" rx="3" stroke="currentColor" stroke-width="1.8"/>
-                            <path d="M4 12h24" stroke="currentColor" stroke-width="1.5"/>
-                            <path d="M10 3v5M22 3v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                            <circle cx="16" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/>
-                            <path d="M13.5 17.5l5 5M18.5 17.5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <rect x="4" y="6" width="24" height="22" rx="3" stroke="currentColor" stroke-width="1.8" />
+                            <path d="M4 12h24" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M10 3v5M22 3v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                            <circle cx="16" cy="20" r="6" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M13.5 17.5l5 5M18.5 17.5l-5 5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
                         </svg>
                     </div>
                     <h3>Annulation facile</h3>
@@ -367,65 +420,305 @@
             <div class="testimonials__track">
                 <!-- Original 6 cards -->
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"C'est pratique, efficace avec des équipes réactives qui améliorent continuellement les fonctionnalités. My Sport Session est devenu un outil indispensable pour notre office de tourisme."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">JM</div><div><strong>Jean-Marc D.</strong><span>Directeur d'Office de Tourisme</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"C'est pratique, efficace avec des équipes réactives qui
+                        améliorent continuellement les fonctionnalités. My Sport Session est devenu un outil
+                        indispensable pour notre office de tourisme."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">JM</div>
+                        <div><strong>Jean-Marc D.</strong><span>Directeur d'Office de Tourisme</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"Il y a eu un vrai avant et après My Sport Session. L'outil a éliminé le chaos des réservations téléphoniques et nous a apporté un soulagement essentiel dans la gestion du planning."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">PL</div><div><strong>Pierre L.</strong><span>Gérant de Golf</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"Il y a eu un vrai avant et après My Sport Session. L'outil a
+                        éliminé le chaos des réservations téléphoniques et nous a apporté un soulagement essentiel dans
+                        la gestion du planning."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">PL</div>
+                        <div><strong>Pierre L.</strong><span>Gérant de Golf</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"J'ai gagné un temps précieux dans la gestion de mes cours. Mes craintes de perdre le contrôle se sont vite dissipées. Je peux enfin me concentrer sur l'enseignement."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">SC</div><div><strong>Sophie C.</strong><span>Professeure de Pilates</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"J'ai gagné un temps précieux dans la gestion de mes cours.
+                        Mes craintes de perdre le contrôle se sont vite dissipées. Je peux enfin me concentrer sur
+                        l'enseignement."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">SC</div>
+                        <div><strong>Sophie C.</strong><span>Professeure de Pilates</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"Grâce à My Sport Session, j'ai découvert le padel à côté de chez moi. Réserver est ultra simple, pas d'abonnement, je choisis quand je veux jouer. C'est exactement ce qu'il me fallait."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">LB</div><div><strong>Lucas B.</strong><span>Joueur de Padel</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"Grâce à My Sport Session, j'ai découvert le padel à côté de
+                        chez moi. Réserver est ultra simple, pas d'abonnement, je choisis quand je veux jouer. C'est
+                        exactement ce qu'il me fallait."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">LB</div>
+                        <div><strong>Lucas B.</strong><span>Joueur de Padel</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"En tant que coach, le nombre de mes réservations a augmenté de 40% depuis que je suis sur la plateforme. Le système de rappels automatiques réduit considérablement les no-shows."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">MR</div><div><strong>Marie R.</strong><span>Coach de CrossFit</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"En tant que coach, le nombre de mes réservations a augmenté
+                        de 40% depuis que je suis sur la plateforme. Le système de rappels automatiques réduit
+                        considérablement les no-shows."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">MR</div>
+                        <div><strong>Marie R.</strong><span>Coach de CrossFit</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"Je fais du yoga le mardi et de la boxe le vendredi, le tout sans aucun abonnement. La flexibilité de My Sport Session correspond parfaitement à mon mode de vie. Je recommande à 100%."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">AT</div><div><strong>Amina T.</strong><span>Utilisatrice multi-sport</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"Je fais du yoga le mardi et de la boxe le vendredi, le tout
+                        sans aucun abonnement. La flexibilité de My Sport Session correspond parfaitement à mon mode de
+                        vie. Je recommande à 100%."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">AT</div>
+                        <div><strong>Amina T.</strong><span>Utilisatrice multi-sport</span></div>
+                    </div>
                 </div>
                 <!-- Duplicate for seamless loop -->
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"C'est pratique, efficace avec des équipes réactives qui améliorent continuellement les fonctionnalités. My Sport Session est devenu un outil indispensable pour notre office de tourisme."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">JM</div><div><strong>Jean-Marc D.</strong><span>Directeur d'Office de Tourisme</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"C'est pratique, efficace avec des équipes réactives qui
+                        améliorent continuellement les fonctionnalités. My Sport Session est devenu un outil
+                        indispensable pour notre office de tourisme."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">JM</div>
+                        <div><strong>Jean-Marc D.</strong><span>Directeur d'Office de Tourisme</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"Il y a eu un vrai avant et après My Sport Session. L'outil a éliminé le chaos des réservations téléphoniques et nous a apporté un soulagement essentiel dans la gestion du planning."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">PL</div><div><strong>Pierre L.</strong><span>Gérant de Golf</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"Il y a eu un vrai avant et après My Sport Session. L'outil a
+                        éliminé le chaos des réservations téléphoniques et nous a apporté un soulagement essentiel dans
+                        la gestion du planning."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">PL</div>
+                        <div><strong>Pierre L.</strong><span>Gérant de Golf</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"J'ai gagné un temps précieux dans la gestion de mes cours. Mes craintes de perdre le contrôle se sont vite dissipées. Je peux enfin me concentrer sur l'enseignement."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">SC</div><div><strong>Sophie C.</strong><span>Professeure de Pilates</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"J'ai gagné un temps précieux dans la gestion de mes cours.
+                        Mes craintes de perdre le contrôle se sont vite dissipées. Je peux enfin me concentrer sur
+                        l'enseignement."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">SC</div>
+                        <div><strong>Sophie C.</strong><span>Professeure de Pilates</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"Grâce à My Sport Session, j'ai découvert le padel à côté de chez moi. Réserver est ultra simple, pas d'abonnement, je choisis quand je veux jouer. C'est exactement ce qu'il me fallait."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">LB</div><div><strong>Lucas B.</strong><span>Joueur de Padel</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"Grâce à My Sport Session, j'ai découvert le padel à côté de
+                        chez moi. Réserver est ultra simple, pas d'abonnement, je choisis quand je veux jouer. C'est
+                        exactement ce qu'il me fallait."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">LB</div>
+                        <div><strong>Lucas B.</strong><span>Joueur de Padel</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"En tant que coach, le nombre de mes réservations a augmenté de 40% depuis que je suis sur la plateforme. Le système de rappels automatiques réduit considérablement les no-shows."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">MR</div><div><strong>Marie R.</strong><span>Coach de CrossFit</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"En tant que coach, le nombre de mes réservations a augmenté
+                        de 40% depuis que je suis sur la plateforme. Le système de rappels automatiques réduit
+                        considérablement les no-shows."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">MR</div>
+                        <div><strong>Marie R.</strong><span>Coach de CrossFit</span></div>
+                    </div>
                 </div>
                 <div class="testimonial">
-                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg></div>
-                    <blockquote class="testimonial__quote">"Je fais du yoga le mardi et de la boxe le vendredi, le tout sans aucun abonnement. La flexibilité de My Sport Session correspond parfaitement à mon mode de vie. Je recommande à 100%."</blockquote>
-                    <div class="testimonial__author"><div class="testimonial__avatar">AT</div><div><strong>Amina T.</strong><span>Utilisatrice multi-sport</span></div></div>
+                    <div class="testimonial__stars"><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78L10 1z" />
+                        </svg></div>
+                    <blockquote class="testimonial__quote">"Je fais du yoga le mardi et de la boxe le vendredi, le tout
+                        sans aucun abonnement. La flexibilité de My Sport Session correspond parfaitement à mon mode de
+                        vie. Je recommande à 100%."</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">AT</div>
+                        <div><strong>Amina T.</strong><span>Utilisatrice multi-sport</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -436,36 +729,57 @@
         <div class="container pro__inner">
             <div class="pro__content">
                 <span class="pro__badge">Espace Professionnel</span>
-                <h2 class="pro__title">Vous êtes un <span class="gradient-text">club de sport</span> ou de loisirs ?</h2>
-                <p class="pro__desc">Optimisez la gestion de vos réservations, augmentez votre visibilité et développez votre clientèle grâce à notre plateforme dédiée aux professionnels.</p>
+                <h2 class="pro__title">Vous êtes un <span class="gradient-text">club de sport</span> ou de loisirs ?
+                </h2>
+                <p class="pro__desc">Optimisez la gestion de vos réservations, augmentez votre visibilité et développez
+                    votre clientèle grâce à notre plateforme dédiée aux professionnels.</p>
                 <ul class="pro__features">
                     <li>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                        </svg>
                         Réservation autonome 24h/24 pour vos clients
                     </li>
                     <li>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                        </svg>
                         Plus de 90 paramètres de personnalisation
                     </li>
                     <li>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                        </svg>
                         Calendrier connecté et synchronisé en temps réel
                     </li>
                     <li>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                        </svg>
                         Gestion des abonnements et des adhérents
                     </li>
                     <li>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                        </svg>
                         Rappels automatiques par email et SMS
                     </li>
                     <li>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                        </svg>
                         Sans commission sur vos paiements
                     </li>
                 </ul>
                 <div class="pro__actions">
-                    <a href="https://info.mysportsession.com/club-de-sport-loisirs" class="btn btn--white btn--lg">Découvrir l'offre Pro</a>
+                    <a href="https://info.mysportsession.com/club-de-sport-loisirs"
+                        class="btn btn--white btn--lg">Découvrir l'offre Pro</a>
                     <a href="#" class="btn btn--ghost-white">Demander une démo</a>
                 </div>
             </div>
@@ -512,16 +826,70 @@
         </div>
     </section>
 
-    <!-- CTA Final -->
-    <section class="cta-final">
-        <div class="container cta-final__inner">
-            <h2>Prêt à <span class="gradient-text">bouger</span> ?</h2>
-            <p>Rejoignez des milliers d'utilisateurs qui ont déjà trouvé leur activité idéale sur My Sport Session.</p>
-            <div class="cta-final__buttons">
-                <a href="#" class="btn btn--white btn--lg">Trouver une activité</a>
-                <a href="#professionnels" class="btn btn--ghost-white btn--lg">Je suis professionnel</a>
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Questions <span class="gradient-text">fréquentes</span></h2>
+            <p class="section-subtitle">Tout ce que vous devez savoir sur My Sport Session</p>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Qu’est-ce que My Sport Session ?
+                        <span class="faq__icon"></span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>My Sport Session est une plateforme de réservation de séances de sport et de loisirs pensée
+                            pour vous simplifier la vie. En quelques clics, 24h/24, trouvez et réservez la séance qui
+                            vous correspond : le bon sport, au bon endroit, au bon moment, sans abonnement et sans
+                            recherches interminables.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Comment réserver une séance sur My Sport Session ?
+                        <span class="faq__icon"></span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Utilisez le moteur de recherche pour trouver une activité (par nom, sport ou ville).
+                            Choisissez votre créneau, connectez-vous et cliquez sur "Réserver". Vous recevrez une
+                            confirmation immédiate par email. Astuce : ajoutez vos clubs préférés en favoris pour
+                            réserver encore plus vite !</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Est-ce que je dois payer en ligne sur My Sport Session ?
+                        <span class="faq__icon"></span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Dans la plupart des cas, le règlement s’effectue directement sur place. Pour certaines
+                            activités, un paiement (total ou partiel) peut être demandé à la réservation. Les conditions
+                            de paiement et d'annulation sont toujours clairement indiquées avant la validation.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Comment gérer mes séances sur My Sport Session ?
+                        <span class="faq__icon"></span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Connectez-vous à votre compte et allez dans la rubrique "Mes réservations". C'est ici que
+                            vous pouvez consulter les détails de vos séances, les ajouter à votre calendrier ou les
+                            annuler (selon les conditions du partenaire).</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Comment faire apparaître mon club sur My Sport Session ?
+                        <span class="faq__icon"></span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Vous êtes un professionnel ? Demandez une démonstration gratuite de notre logiciel ! Nous
+                            vous accompagnons pour optimiser votre agenda, gérer vos offres et booster votre visibilité.
+                            Rendez-vous sur notre espace Pro pour en savoir plus.</p>
+                    </div>
+                </div>
             </div>
-            <div class="cta-final__price">À partir de <strong>1 &euro;</strong> la séance &middot; Sans abonnement &middot; Sans commission</div>
         </div>
     </section>
 
@@ -533,16 +901,26 @@
                     <a href="/" class="footer__logo">
                         <img src="Photos/LogoBlanc.png" alt="My Sport Session">
                     </a>
-                    <p>La plateforme de réservation de sport et loisirs, à la carte et sans abonnement. Made in France.</p>
+                    <p>La plateforme de réservation de sport et loisirs, à la carte et sans abonnement. Made in France.
+                    </p>
                     <div class="footer__social">
                         <a href="#" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" />
+                            </svg>
                         </a>
                         <a href="#" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <circle cx="12" cy="12" r="5" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                            </svg>
                         </a>
                         <a href="#" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2V9zm2-6a2 2 0 110 4 2 2 0 010-4z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2V9zm2-6a2 2 0 110 4 2 2 0 010-4z" />
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -587,4 +965,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

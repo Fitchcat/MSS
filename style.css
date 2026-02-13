@@ -1625,7 +1625,7 @@ img {
         gap: 32px;
     }
 
-    .activities__track {
+    .activities__grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1704,7 +1704,7 @@ img {
         padding-top: 0;
     }
 
-    .activities__track {
+    .activities__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 

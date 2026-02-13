@@ -627,13 +627,16 @@ img {
     color: var(--text-light);
     box-shadow: var(--shadow-sm);
     transition: all var(--transition);
+    overflow: hidden;
+    /* Ensure image stays inside */
 }
 
-.icon-tag__icon svg {
+/* Updated to support PNGs */
+.icon-tag__icon img {
     width: 28px;
     height: 28px;
-    fill: currentColor;
-    stroke: none;
+    object-fit: contain;
+    transition: all var(--transition);
 }
 
 .icon-tag__label {
@@ -645,14 +648,21 @@ img {
 }
 
 .icon-tag:hover .icon-tag__icon {
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: #ed2d1c;
+    /* Brand Red */
+    background: #ed2d1c;
+    /* Brand Red */
     transform: translateY(-2px);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 12px rgba(237, 45, 28, 0.25);
+}
+
+.icon-tag:hover .icon-tag__icon img {
+    /* Turn black/colored image to white */
+    filter: brightness(0) invert(1);
 }
 
 .icon-tag:hover .icon-tag__label {
-    color: var(--primary);
+    color: #ed2d1c;
     font-weight: 600;
 }
 

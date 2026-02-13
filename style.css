@@ -245,6 +245,16 @@ img {
     gap: 32px;
 }
 
+.btn--header {
+    min-width: 140px;
+    /* Ensure equal width */
+}
+
+/* Equalize height: Ghost has 2px border, Secondary needs 2px border to match */
+.btn--header.btn--secondary {
+    border: 2px solid transparent;
+}
+
 .header__nav a {
     font-size: 1 rem;
     font-weight: 500;

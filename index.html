@@ -48,147 +48,156 @@
     <!-- Hero -->
     <section class="hero">
         <div class="hero__bg"></div>
-        <div class="container hero__content">
-            <h1 class="hero__title">Trouvez et réservez votre <span class="highlight">activité sportive</span> autour
-                de vous</h1>
-            <div class="hero__bg-blob"></div>
-            <p class="hero__subtitle">Simple, rapide, sans engagement.</p>
+        <div class="container hero__container">
+            <!-- Left Column: Content -->
+            <div class="hero__content">
+                <h1 class="hero__title">Trouvez et réservez votre <span class="highlight">activité sportive</span>
+                    autour
+                    de vous</h1>
+                <div class="hero__bg-blob"></div>
+                <p class="hero__subtitle">Simple, rapide, sans engagement.</p>
 
-            <!-- Search bar Doctolib-style -->
-            <div class="search-bar">
-                <div class="search-bar__field">
-                    <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <circle cx="11" cy="11" r="8" />
-                        <path d="m21 21-4.35-4.35" />
-                    </svg>
-                    <div class="search-bar__typing-wrap">
-                        <input type="text" placeholder="" class="search-bar__input" id="searchActivity">
-                        <span class="search-bar__animated-ph" id="animatedPlaceholder"></span>
+                <!-- Search bar Doctolib-style -->
+                <div class="search-bar">
+                    <div class="search-bar__field">
+                        <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                        <div class="search-bar__typing-wrap">
+                            <input type="text" placeholder="" class="search-bar__input" id="searchActivity">
+                            <span class="search-bar__animated-ph" id="animatedPlaceholder"></span>
+                        </div>
                     </div>
+                    <div class="search-bar__divider"></div>
+                    <div class="search-bar__field">
+                        <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <input type="text" placeholder="Où ? (ville, code postal)" class="search-bar__input">
+                    </div>
+                    <button class="btn btn--primary btn--lg search-bar__btn">Rechercher</button>
                 </div>
-                <div class="search-bar__divider"></div>
-                <div class="search-bar__field">
-                    <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    <input type="text" placeholder="Où ? (ville, code postal)" class="search-bar__input">
+
+                <!-- Quick tags -->
+                <div class="hero__tags-wrapper">
+                    <button class="tags-nav tags-nav--prev" aria-label="Défiler à gauche">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="hero__tags">
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Aquabike.png" alt="Aquabike">
+                            </div>
+                            <span class="icon-tag__label">Aquabike</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Badminton.png" alt="Badminton">
+                            </div>
+                            <span class="icon-tag__label">Badminton</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Equitation.png" alt="Équitation">
+                            </div>
+                            <span class="icon-tag__label">Équitation</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Fitness.png" alt="Fitness">
+                            </div>
+                            <span class="icon-tag__label">Fitness</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Golf.png" alt="Golf">
+                            </div>
+                            <span class="icon-tag__label">Golf</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Kagoo jump.png" alt="Kangoo Jump">
+                            </div>
+                            <span class="icon-tag__label">Kangoo Jump</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Kite surf.png" alt="Kite Surf">
+                            </div>
+                            <span class="icon-tag__label">Kite Surf</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Natation.png" alt="Natation">
+                            </div>
+                            <span class="icon-tag__label">Natation</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Padel.png" alt="Padel">
+                            </div>
+                            <span class="icon-tag__label">Padel</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Peche.png?v=4" alt="Pêche">
+                            </div>
+                            <span class="icon-tag__label">Pêche</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Pilates.png" alt="Pilates">
+                            </div>
+                            <span class="icon-tag__label">Pilates</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Squash.png" alt="Squash">
+                            </div>
+                            <span class="icon-tag__label">Squash</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Tennis.png" alt="Tennis">
+                            </div>
+                            <span class="icon-tag__label">Tennis</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Trampoline.png" alt="Trampoline">
+                            </div>
+                            <span class="icon-tag__label">Trampoline</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Trotinette.png" alt="Trotinette">
+                            </div>
+                            <span class="icon-tag__label">Trotinette</span>
+                        </button>
+                        <button class="icon-tag">
+                            <div class="icon-tag__icon">
+                                <img src="icones/Yoga.png" alt="Yoga">
+                            </div>
+                            <span class="icon-tag__label">Yoga</span>
+                        </button>
+                    </div>
+                    <button class="tags-nav tags-nav--next" aria-label="Défiler à droite">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
                 </div>
-                <button class="btn btn--primary btn--lg search-bar__btn">Rechercher</button>
             </div>
 
-            <!-- Quick tags -->
-            <div class="hero__tags-wrapper">
-                <button class="tags-nav tags-nav--prev" aria-label="Défiler à gauche">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M15 18l-6-6 6-6" />
-                    </svg>
-                </button>
-                <div class="hero__tags">
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Aquabike.png" alt="Aquabike">
-                        </div>
-                        <span class="icon-tag__label">Aquabike</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Badminton.png" alt="Badminton">
-                        </div>
-                        <span class="icon-tag__label">Badminton</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Equitation.png" alt="Équitation">
-                        </div>
-                        <span class="icon-tag__label">Équitation</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Fitness.png" alt="Fitness">
-                        </div>
-                        <span class="icon-tag__label">Fitness</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Golf.png" alt="Golf">
-                        </div>
-                        <span class="icon-tag__label">Golf</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Kagoo jump.png" alt="Kangoo Jump">
-                        </div>
-                        <span class="icon-tag__label">Kangoo Jump</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Kite surf.png" alt="Kite Surf">
-                        </div>
-                        <span class="icon-tag__label">Kite Surf</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Natation.png" alt="Natation">
-                        </div>
-                        <span class="icon-tag__label">Natation</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Padel.png" alt="Padel">
-                        </div>
-                        <span class="icon-tag__label">Padel</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Peche.png?v=4" alt="Pêche">
-                        </div>
-                        <span class="icon-tag__label">Pêche</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Pilates.png" alt="Pilates">
-                        </div>
-                        <span class="icon-tag__label">Pilates</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Squash.png" alt="Squash">
-                        </div>
-                        <span class="icon-tag__label">Squash</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Tennis.png" alt="Tennis">
-                        </div>
-                        <span class="icon-tag__label">Tennis</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Trampoline.png" alt="Trampoline">
-                        </div>
-                        <span class="icon-tag__label">Trampoline</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Trotinette.png" alt="Trotinette">
-                        </div>
-                        <span class="icon-tag__label">Trotinette</span>
-                    </button>
-                    <button class="icon-tag">
-                        <div class="icon-tag__icon">
-                            <img src="icones/Yoga.png" alt="Yoga">
-                        </div>
-                        <span class="icon-tag__label">Yoga</span>
-                    </button>
-                </div>
-                <button class="tags-nav tags-nav--next" aria-label="Défiler à droite">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6" />
-                    </svg>
-                </button>
+            <!-- Right Column: Image (Desktop only) -->
+            <div class="hero__image-container">
+                <img src="Photos/heroImage.png" alt="Sportifs heureux" class="hero__image">
             </div>
         </div>
     </section>
